@@ -1,0 +1,83 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    height: 100vh;
+    width:100vw;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBLnIO8uqVOl4EHKhqd3c2a5nqBLJDdh8fb3V41J_F6Q&s');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+div[data-playerChance]{
+    background-color: rgba(255, 255, 255, 0.628);
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+div[data-playContainer]{
+    width: 17.5rem;
+    position: absolute;
+    margin: 0 auto;
+    top: 200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgba(255, 255, 255, 0.628);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.box{
+    width: 5rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.box1,.box2,.box4,.box5{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.box7,.box8{
+    border-right: 2px solid black;
+}
+
+.box3,.box6{
+    border-bottom: 2px solid black;
+}
+
+div[data-newGame]{
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.628);
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+div[data-newGame].active{
+    display: flex;
+}
+
+.win{
+    background-color: rgba(7, 228, 7, 0.863);
+}
